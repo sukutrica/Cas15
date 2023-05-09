@@ -1,0 +1,124 @@
+import pyautogui as pg
+from time import sleep
+
+pg.hotkey('win','shift','s')
+sleep(1)
+pg.mouseDown(10,10,button='left')
+sleep(1)
+pg.mouseUp(200,400,button='left')
+
+
+pg.hotkey('win')
+pg.typewrite('Word')
+pg.hotkey('enter')
+sleep(4)
+pg.hotkey('ctrl','n')
+sleep(1)
+pg.hotkey('ctrl','s')
+sleep(1)
+pg.hotkey('enter')
+sleep(1)
+pg.hotkey('enter')
+sleep(1)
+pg.hotkey('enter')
+sleep(1)
+pg.hotkey('enter')
+
+
+import pyautogui as pg
+from time import sleep
+
+#sleep(6)
+#pisanje teksta \n novi red  \t enter
+### \t ENTER
+#pg.typewrite('Hello world\t',interval=0.5)
+
+#pg.typewrite(['a','b','enter','backspace','tab'],interval=0.5)
+#pg.hotkey('win','shift','s')
+
+pg.keyDown('s')
+pg.keyUp('tab')
+pg.keyDown('down','enter')
+import pyautogui as pg
+##pomeranje misa na kordinatu u trajanju od 4 sekunde
+#pg.moveTo(100,100,duration=0.5)
+#pg.moveTo(500,200,duration=0.5)
+##pomeranje relativmno u odnosu na poziciju kursora
+#pg.moveRel(500,100,duration=0.5)
+##klik na mestu 
+#pg.click(x=99, y=124,clicks=2,interval=0.05,button='left')
+##desni klik na nekom mestu
+#pg.rightClick(x=99, y=124)
+##srednji klik na odredjenu kordinatu
+#pg.middleClick(513,89)
+##dupli levi klik
+#pg.doubleClick(150,220)
+##triple klik selektuje celu recenicu
+#pg.tripleClick(150,220)
+#print(pg.position())
+##scroluje
+pg.scroll(1000)
+
+pg.mouseDown(500,200,button='left')
+pg.mouseUp(600,300,button='right')
+
+import pyautogui as pg
+from time import sleep
+
+#sleep(6)
+#pisanje teksta \n novi red  \t enter
+### \t ENTER
+#pg.typewrite('Hello world\t',interval=0.5)
+
+#pg.typewrite(['a','b','enter','backspace','tab'],interval=0.5)
+#pg.hotkey('win','shift','s')
+
+pg.keyDown('s')
+pg.keyUp('tab')
+pg.keyDown('down','enter')
+
+import pyautogui as pg
+
+#pg.alert('Opasnost')
+
+#pg.confirm('This window with ok and cancel',title='Odabir',buttons=['Da','Ne'])
+
+#print(pg.confirm('This window with ok and cancel',title='Odabir',buttons=['Da','Ne']))  #vraća tekst odabira
+
+#print(pg.prompt('Unesite nesto',default=''))
+for i in range (0,3):
+a=eval(i)
+print(pg.password('Unesite sifru {}'.format(a),default='',mask='*')) #unošenje šifre sa maskom *****
+
+
+import pyautogui as pg
+##pomeranje misa na kordinatu u trajanju od 4 sekunde
+#pg.moveTo(100,100,duration=0.5)
+#pg.moveTo(500,200,duration=0.5)
+##pomeranje relativmno u odnosu na poziciju kursora
+#pg.moveRel(500,100,duration=0.5)
+##klik na mestu 
+#pg.click(x=99, y=124,clicks=2,interval=0.05,button='left')
+##desni klik na nekom mestu
+#pg.rightClick(x=99, y=124)
+##srednji klik na odredjenu kordinatu
+#pg.middleClick(513,89)
+##dupli levi klik
+#pg.doubleClick(150,220)
+##triple klik selektuje celu recenicu
+#pg.tripleClick(150,220)
+#print(pg.position())
+##scroluje
+pg.scroll(1000)
+
+pg.mouseDown(500,200,button='left')
+pg.mouseUp(600,300,button='right')
+
+import pyautogui as pg
+
+print(pg.locateOnScreen('sc.png'))
+
+
+print(pg.locateCenterOnScreen('sc.png'))
+
+
